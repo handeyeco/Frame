@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link  href="./lib/cropperjs/cropper.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+
+    <body>
+        <div class="controls">
+            <div>
+                <label for="width">Aspect Width: </label>
+                <input name="width" id="width" type="number" value=5 />
+
+                <label for="height">Aspect Height: </label>
+                <input name="height" id="height" type="number" value=7 />
+
+                <label for="locked">Locked</label>
+                <input name="locked" id="locked" type="checkbox" checked />
+
+                <button id="fullscreen" type="button">Fullscreen Preview</button>
+
+                <button id="change" type="button" disabled>Change image</button>
+            </div>
+            <form id="upload" style="display:none">
+                <label for="url">Image Url: </label>
+                <input name="url" id="url" />
+                &nbsp;or&nbsp;
+                <label for="file">Image File: </label>
+                <input type="file" id="file" accept="image/*">
+
+                <button>Upload</button>
+            </form>
+        </div>
+
+        <div class="cropper">
+            <img id="image" src="./kitten.jpg" />
+        </div>
+
+        <div class="preview" id="preview">
+            <img id="preview__img" />
+        </div>
+    </body>
+
+    <script src="./lib/cropperjs/cropper.min.js"></script>
+    <script src="index.js"></script>
+</html>

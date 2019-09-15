@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    background: black;
+}
+
+.controls {
+    background: lightgrey;
+}
+
+.controls input {
+    font-size: 1em;
+}
+
+.controls input[type=number] {
+    width: 3rem;
+}
+
+.controls input:disabled {
+    background: none;
+    border: none;
+    color: black;
+}
+
+.cropper {
+    height: 90vh;
+    width: 90vw;
+    margin: 0 auto 10vh;
+}
+
+.preview {
+    overflow: hidden;
+    margin: auto;
+}
+
+.preview {
+    height: 100vh;
+    width: 100vw;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.upload {
+    display: none;
+}
